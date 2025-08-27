@@ -1,0 +1,8 @@
+title: git-calendar sample calendars
+description: |
+  This is the description found in _config.yaml.  Formatting can be
+  <b>like html</b> or *markdown.*
+
+  Second paragraph.
+event_url: wooasd
+magic: abrakadabra

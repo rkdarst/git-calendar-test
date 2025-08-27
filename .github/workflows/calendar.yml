@@ -1,0 +1,20 @@
+on: [push]
+
+jobs:
+  git-calendar:
+    runs-on: ubuntu-latest
+    name: Git calendar build and deploy
+    environment:
+      name: github-pages
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: git-calendar action
+        uses: coderefinery/git-calendar@main
+        #with:
+        #  calendars: calendars/*.yaml
+        #  output_dir: output/
+        #  index_file: index.html
+        #  pages_deploy: true
